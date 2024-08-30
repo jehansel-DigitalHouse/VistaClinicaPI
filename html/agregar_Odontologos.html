@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clínica Odontológica</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Clínica Odontológica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pacientesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gestión de Pacientes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pacientesDropdown">
+                        <a class="dropdown-item" href="agregar_pacientes.html">Agregar Paciente</a>
+                        <a class="dropdown-item" href="../html/listar_pacientes.html">Listar Pacientes</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="odontologosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gestión de Odontólogos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="odontologosDropdown">
+                        <a class="dropdown-item" href="buscar_odontologos.html">Buscar Odontólogo</a>
+                        <a class="dropdown-item" href="agregar_Odontologos.html">Agregar Odontólogo</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="turnosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gestión de Turnos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="turnosDropdown">
+                        <a class="dropdown-item" href="#">Agendar turno</a>
+                        <a class="dropdown-item" href="#">Eliminar turno</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>    
+
+    <div class="container mt-5">
+        <h2>Agregar Odontólogo</h2>
+        <form id="agregarform">
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" required />
+            </div>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required />
+            </div>
+            <div class="mb-3">
+                <label for="nroMatricula" class="form-label">Número de Matricula</label>
+                <input type="text" class="form-control" id="nroMatricula" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-1">© 2024 Clínica Odontológica. Todos los derechos reservados.</p>
+            <p>
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Términos de Uso</a>
+            </p>
+            <p class="mt-3">Contacto: <a href="mailto:contacto@clinicaodontologica.com">contacto@clinicaodontologica.com</a></p>
+        </div>
+    </footer>
+</div>
+
+    <script src="../js/agregarOdontologo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

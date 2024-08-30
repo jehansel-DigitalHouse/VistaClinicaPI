@@ -1,0 +1,9 @@
+# Ignorar la carpeta .vscode
+.vscode/
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas de dependencias
+node_modules/
